@@ -26,62 +26,74 @@ function App() {
 
   const vehicles = [
     {
-      name: "Mercury EZ",
-      image: "/images/scooter-1.png",
-      price: "Best for Daily Commute",
+      name: "Mercury DLX PRO",
+      image: "/images/mercury-dlx-pro-red-front-three-quarter.png",
+      price: "Performance Scooter",
       specs: [
         ["Top Speed", "45–55 kmph"],
-        ["Range", "100–110 km"],
+        ["Range", "100+ km per Charge"],
         ["Category", "Electric Scooter"],
       ],
     },
     {
       name: "Mercury DLX",
-      image: "/images/scooter-2.png",
+      image: "/images/mercury-dlx-red-front-three-quarter.png",
       price: "Long Range",
       specs: [
         ["Top Speed", "65 kmph"],
-        ["Range", "150 km"],
+        ["Range", "Up to 150 km per Charge"],
         ["Charging", "4–5 hr"],
       ],
     },
     {
       name: "Mercury DLX Gold",
-      image: "/images/scooter-3.png",
+      image: "/images/mercury-dlx-gold-white-front-three-quarter.png",
       price: "Premium Scooter",
       specs: [
         ["Top Speed", "55 kmph"],
         ["Range", "140+ km"],
+         ["Charging", "3–4 hr"],
         ["Category", "Electric Scooter"],
       ],
     },
     {
-      name: "Mercury DLX Pro",
-      image: "/images/scooter-4.png",
-      price: "Performance",
+      name: "Mercury EZ",
+      image: "/images/mercury-ez-blue-front-three-quarter.png",
+      price: "Best for Daily Commute",
       specs: [
-        ["Range", "100+ km"],
+         ["Top Speed", "45-55 kmph"],
+        ["Range", "100-110 km"],
         ["Charging", "3–4 hr"],
         ["Category", "Electric Scooter"],
       ],
     },
     {
-      name: "Mercury DLX Elite",
-      image: "/images/scooter-1.png",
+      name: "Mercury Elite",
+      // image: "/images/mercury-dlx-pro-red-front-three-quarter.png",
       price: "City Mobility",
       specs: [
-        ["Top Speed", "45 kmph"],
+        ["Top Speed", "60 kmph"],
         ["Range", "Up to 80 km"],
         ["Charging", "3–4 hr"],
       ],
     },
     {
       name: "Mercury DLX Spark",
-      image: "/images/scooter-2.png",
+      // image: "/images/scooter-2.png",
       price: "Smart Choice",
       specs: [
-        ["Top Speed", "45 kmph"],
+        ["Top Speed", "60 kmph"],
         ["Range", "Up to 100 km"],
+        ["Charging", "3–4 hr"],
+      ],
+    },
+    {
+      name: "Mercury Cutee",
+      // image: "/images/scooter-2.png",
+      price: "Smart Choice",
+      specs: [
+        ["Top Speed", "60 kmph"],
+        ["Range", "80 km"],
         ["Charging", "3–4 hr"],
       ],
     },
@@ -90,30 +102,32 @@ function App() {
   const loadingVehicles = [
     {
       name: "Mushak",
-      image: "/images/storage.jpg",
+      image: "/images/mercury-mushak-front-three-quarter.png",
       price: "Commercial EV",
       specs: [
         ["Range", "300 km"],
         ["Top Speed", "70 kmph"],
+        ["Payload", "1000 Kg"],
         ["Use", "Heavy Local Freight"],
       ],
     },
-    // {
-    //   name: "Kala Ghoda",
-    //   image: "/images/service.jpg",
-    //   price: "Commercial EV",
-    //   specs: [
-    //     ["Range", "220 km"],
-    //     ["Use", "Daily Delivery"],
-    //     ["Category", "Loading Vehicle"],
-    //   ],
-    // },
+    {
+      name: "Kala Ghoda",
+      image: "/images/mercury-kala-ghoda-white-front-three-quarter.png",
+      price: "Commercial EV",
+      specs: [
+        ["Range", "220 km"],
+        ["Use", "Daily Delivery"],
+        ["Payload", "550 kg"],
+        ["Category", "Loading Vehicle"],
+      ],
+    },
   ];
 
   const passengerVehicles = [
     {
-      name: "Dodo",
-      image: "/images/interior.jpg",
+      name: "Dodo+",
+      image: "/images/mercury-dodo-plus-red-front-three-quarter.png",
       price: "Passenger EV",
       specs: [
         ["Type", "E-Rickshaw"],
@@ -123,7 +137,7 @@ function App() {
     },
     {
       name: "Limosa",
-      image: "/images/lounge.jpg",
+      image: "/images/mercury-limosa-white-front-three-quarter.png",
       price: "Passenger EV",
       specs: [
         ["Type", "E-Rickshaw"],
@@ -133,7 +147,7 @@ function App() {
     },
     {
       name: "Tejashvi Neo+",
-      image: "/images/rear-light.jpg",
+      image: "/images/mercury-tejashvi-neo-plus-white-front-three-quarter.png",
       price: "Passenger EV",
       specs: [
         ["Type", "Electric Vehicle"],
@@ -143,7 +157,7 @@ function App() {
     },
     {
       name: "Tejashvi",
-      image: "/images/hero-scooter.png",
+      image: "/images/mercury-tejashvi-front-three-quarter.png",
       price: "4+1 Seater",
       specs: [
         ["Capacity", "4+1"],
@@ -174,7 +188,7 @@ function App() {
       title: "Solar Solutions",
       text: "Rooftop solar solutions to power your home and EV.",
     },
-   
+
     {
       icon: "🔧",
       title: "Service & Maintenance",
@@ -190,7 +204,7 @@ function App() {
       title: "Easy Financing",
       text: "Flexible financing options for your new EV.",
     },
-     {
+    {
       icon: "👨‍🔧",
       title: "Expert Support",
       text: "Experienced professionals to assist you.",
@@ -230,18 +244,18 @@ function App() {
       image: "/images/showroom.jpeg",
       title: "Our Showroom",
     },
+    // {
+    //   image: "/images/showroom.jpeg",
+    //   title: "Showroom Interior",
+    // },
     {
-      image: "/images/interior.jpg",
-      title: "Showroom Interior",
-    },
-    {
-      image: "/images/lounge.jpg",
+      image: "/images/newlounge.png",
       title: "Customer Lounge",
     },
-    {
-      image: "/images/storage.jpg",
-      title: "Service & Storage",
-    },
+    // {
+    //   image: "/images/storage.jpg",
+    //   title: "Service & Storage",
+    // },
     {
       image: "/images/service.jpg",
       title: "Service Area",
@@ -250,14 +264,14 @@ function App() {
       image: "/images/hero-scooter.jpeg",
       title: "Mercury EV",
     },
-    {
-      image: "/images/scooter-1.jpeg",
-      title: "Electric Scooter",
-    },
-    {
-      image: "/images/scooter-2.png",
-      title: "Mercury DLX",
-    },
+    // {
+    //   image: "/images/mercury-dlx-pro-red-front-three-quarter.jpeg",
+    //   title: "Electric Scooter",
+    // },
+    // {
+    //   image: "/images/mercury-dlx-red-front-three-quarter.png",
+    //   title: "Mercury DLX",
+    // },
   ];
 
   const partners = [
@@ -287,9 +301,7 @@ function App() {
   ];
 
   const openVehicle = (vehicleName) => {
-    setActiveVehicle(
-      activeVehicle === vehicleName ? null : vehicleName
-    );
+    setActiveVehicle(activeVehicle === vehicleName ? null : vehicleName);
   };
 
   const enquireVehicle = (vehicleName) => {
@@ -297,19 +309,17 @@ function App() {
 
     window.open(
       `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
-      "_blank"
+      "_blank",
     );
   };
 
   return (
     <div className="app">
-
       {/* =====================================================
           NAVBAR
       ===================================================== */}
 
       <header className="navbar">
-
         <div className="logo">
           <div className="logo-circle">⚡</div>
 
@@ -320,35 +330,19 @@ function App() {
         </div>
 
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <button onClick={() => scrollTo("home")}>Home</button>
 
-          <button onClick={() => scrollTo("home")}>
-            Home
-          </button>
+          <button onClick={() => scrollTo("about")}>About</button>
 
-          <button onClick={() => scrollTo("about")}>
-            About
-          </button>
+          <button onClick={() => scrollTo("vehicles")}>Vehicles</button>
 
-          <button onClick={() => scrollTo("vehicles")}>
-            Vehicles
-          </button>
+          <button onClick={() => scrollTo("facilities")}>Facilities</button>
 
-          <button onClick={() => scrollTo("facilities")}>
-            Facilities
-          </button>
+          <button onClick={() => scrollTo("gallery")}>Gallery</button>
 
-          <button onClick={() => scrollTo("gallery")}>
-            Gallery
-          </button>
+          <button onClick={() => scrollTo("why")}>Why Us</button>
 
-          <button onClick={() => scrollTo("why")}>
-            Why Us
-          </button>
-
-          <button onClick={() => scrollTo("contact")}>
-            Contact
-          </button>
-
+          <button onClick={() => scrollTo("contact")}>Contact</button>
         </nav>
 
         {/* <button
@@ -365,18 +359,14 @@ function App() {
         >
           ☰
         </button>
-
       </header>
-
 
       {/* =====================================================
           HERO
       ===================================================== */}
 
       <section className="hero mt-10" id="home">
-
         <div className="hero-content">
-
           <div className="hero-small-title">
             ⚡ AUTHORISED MERCURY EV-TECH DEALER · INDORE
           </div>
@@ -384,40 +374,29 @@ function App() {
           <h1>
             Drive the future.
             <br />
-            <span style={{ color: "#55d638" }}>
-              Charge it yourself.
-            </span>
+            <span style={{ color: "#55d638" }}>Charge it yourself.</span>
           </h1>
 
           <p>
-            Voltage Energy Ventures LLP brings you the Mercury
-            EV-Tech electric range — scooters, loading vehicles
-            and passenger vehicles — plus solar solutions to
-            power them at home.
+            Voltage Energy Ventures LLP brings you the Mercury EV-Tech electric
+            range — scooters, loading vehicles and passenger vehicles — plus
+            solar solutions to power them at home.
           </p>
 
           <div className="hero-buttons">
-
             <button
               className="primary-button"
-              onClick={() =>
-                window.open(whatsapp, "_blank")
-              }
+              onClick={() => window.open(whatsapp, "_blank")}
             >
               Chat on WhatsApp
             </button>
 
-            <a
-              href={`tel:+${phone}`}
-              className="secondary-button"
-            >
+            <a href={`tel:+${phone}`} className="secondary-button">
               Call +91 74705 98407
             </a>
-
           </div>
 
           <div className="hero-info">
-
             <div>
               <span>⚡</span>
 
@@ -444,76 +423,53 @@ function App() {
                 <strong>Solar Solutions</strong>
               </div>
             </div>
-
           </div>
-
         </div>
 
         <div className="hero-image">
-
           <div className="hero-glow"></div>
 
-          <img
-            src="/images/hero-scooter.jpeg"
-            alt="Mercury Electric Scooter"
-          />
-
+          <img src="/images/hero-scooter.jpeg" alt="Mercury Electric Scooter" />
         </div>
-
       </section>
-
 
       {/* =====================================================
           ABOUT
       ===================================================== */}
 
       <section className="section" id="about">
-
         <div className="section-heading">
-
           <span>VOLTAGE ENERGY VENTURES LLP</span>
 
           <h2>Electric mobility for a cleaner future.</h2>
 
-          <p>
-            Your authorised Mercury EV-Tech dealer in Indore.
-          </p>
-
+          <p>Your authorised Mercury EV-Tech dealer in Indore.</p>
         </div>
 
         <div className="about-grid">
-
           <div className="about-image">
-
             <img
               src="/images/showroom.jpeg"
               alt="Voltage Energy Ventures showroom"
             />
-
           </div>
 
           <div className="about-content">
-
-            <h3>
-              Your complete EV destination in Indore.
-            </h3>
+            <h3>Your complete EV destination in Indore.</h3>
 
             <p>
-              Voltage Energy Ventures LLP brings the Mercury
-              EV-Tech range under one roof. From electric
-              scooters for everyday commuting to commercial
-              loading vehicles and passenger e-rickshaws, we
-              provide practical electric mobility solutions.
+              Voltage Energy Ventures LLP brings the Mercury EV-Tech range under
+              one roof. From electric scooters for everyday commuting to
+              commercial loading vehicles and passenger e-rickshaws, we provide
+              practical electric mobility solutions.
             </p>
 
             <p>
-              We also provide rooftop solar solutions so you
-              can generate your own electricity and use it to
-              charge your EV.
+              We also provide rooftop solar solutions so you can generate your
+              own electricity and use it to charge your EV.
             </p>
 
             <div className="about-stats">
-
               <div>
                 <strong>6+</strong>
                 <span>Electric Scooters</span>
@@ -528,40 +484,30 @@ function App() {
                 <strong>4</strong>
                 <span>Passenger Vehicles</span>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           VEHICLES
       ===================================================== */}
 
       <section className="section vehicles" id="vehicles">
-
         <div className="section-heading">
-
           <span>MERCURY EV-TECH RANGE</span>
 
           <h2>Electric vehicles for every journey.</h2>
 
           <p>
-            Explore scooters, loading vehicles and passenger
-            electric vehicles available at our Indore showroom.
+            Explore scooters, loading vehicles and passenger electric vehicles
+            available at our Indore showroom.
           </p>
-
         </div>
-
 
         {/* SCOOTERS */}
 
         <div style={{ marginBottom: "70px" }}>
-
           <div
             style={{
               display: "flex",
@@ -572,58 +518,40 @@ function App() {
               gap: "10px",
             }}
           >
-
             <div>
               <h2>Electric Scooters</h2>
 
-              <p style={{ color: "#777", marginTop: "5px" }}>
-                Daily commute
-              </p>
+              <p style={{ color: "#777", marginTop: "5px" }}>Daily commute</p>
             </div>
 
             <strong style={{ color: "#45b72f" }}>
               {vehicles.length} Models
             </strong>
-
           </div>
 
           <div className="vehicle-grid">
-
             {vehicles.map((vehicle) => (
-
               <div
                 className="vehicle-card"
                 key={vehicle.name}
                 onClick={() => openVehicle(vehicle.name)}
               >
-
                 <div className="vehicle-image">
-
-                  <img
-                    src={vehicle.image}
-                    alt={vehicle.name}
-                  />
+                  <img src={vehicle.image} alt={vehicle.name} />
 
                   <div
                     className={`vehicle-overlay ${
-                      activeVehicle === vehicle.name
-                        ? "show"
-                        : ""
+                      activeVehicle === vehicle.name ? "show" : ""
                     }`}
                   >
-
                     <h3>{vehicle.name}</h3>
 
                     {vehicle.specs.map((spec) => (
-
                       <div className="spec" key={spec[0]}>
-
                         <span>{spec[0]}</span>
 
                         <strong>{spec[1]}</strong>
-
                       </div>
-
                     ))}
 
                     <button
@@ -634,89 +562,57 @@ function App() {
                     >
                       Enquire on WhatsApp
                     </button>
-
                   </div>
-
                 </div>
 
                 <div className="vehicle-info">
-
                   <h3>{vehicle.name}</h3>
 
                   <strong>{vehicle.price}</strong>
-
                 </div>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
 
         {/* LOADING VEHICLES */}
 
-        <div
-          id="loading"
-          style={{ marginBottom: "70px" }}
-        >
-
+        <div id="loading" style={{ marginBottom: "70px" }}>
           <div
             style={{
               marginBottom: "25px",
             }}
           >
-
             <h2>Loading Vehicles</h2>
 
             <p style={{ color: "#777", marginTop: "5px" }}>
               For business & delivery
             </p>
-
           </div>
 
           <div className="vehicle-grid">
-
             {loadingVehicles.map((vehicle) => (
-
               <div
                 className="vehicle-card"
                 key={vehicle.name}
                 onClick={() => openVehicle(vehicle.name)}
               >
-
                 <div className="vehicle-image">
-
-                  <img
-                    src={vehicle.image}
-                    alt={vehicle.name}
-                  />
+                  <img src={vehicle.image} alt={vehicle.name} />
 
                   <div
                     className={`vehicle-overlay ${
-                      activeVehicle === vehicle.name
-                        ? "show"
-                        : ""
+                      activeVehicle === vehicle.name ? "show" : ""
                     }`}
                   >
-
                     <h3>{vehicle.name}</h3>
 
                     {vehicle.specs.map((spec) => (
-
-                      <div
-                        className="spec"
-                        key={spec[0]}
-                      >
-
+                      <div className="spec" key={spec[0]}>
                         <span>{spec[0]}</span>
 
                         <strong>{spec[1]}</strong>
-
                       </div>
-
                     ))}
 
                     <button
@@ -727,86 +623,57 @@ function App() {
                     >
                       Enquire on WhatsApp
                     </button>
-
                   </div>
-
                 </div>
 
                 <div className="vehicle-info">
-
                   <h3>{vehicle.name}</h3>
 
                   <strong>{vehicle.price}</strong>
-
                 </div>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
 
         {/* PASSENGER */}
 
         <div id="passenger">
-
           <div
             style={{
               marginBottom: "25px",
             }}
           >
-
             <h2>Passenger Vehicles</h2>
 
             <p style={{ color: "#777", marginTop: "5px" }}>
               E-rickshaws & passenger mobility
             </p>
-
           </div>
 
           <div className="vehicle-grid">
-
             {passengerVehicles.map((vehicle) => (
-
               <div
                 className="vehicle-card"
                 key={vehicle.name}
                 onClick={() => openVehicle(vehicle.name)}
               >
-
                 <div className="vehicle-image">
-
-                  <img
-                    src={vehicle.image}
-                    alt={vehicle.name}
-                  />
+                  <img src={vehicle.image} alt={vehicle.name} />
 
                   <div
                     className={`vehicle-overlay ${
-                      activeVehicle === vehicle.name
-                        ? "show"
-                        : ""
+                      activeVehicle === vehicle.name ? "show" : ""
                     }`}
                   >
-
                     <h3>{vehicle.name}</h3>
 
                     {vehicle.specs.map((spec) => (
-
-                      <div
-                        className="spec"
-                        key={spec[0]}
-                      >
-
+                      <div className="spec" key={spec[0]}>
                         <span>{spec[0]}</span>
 
                         <strong>{spec[1]}</strong>
-
                       </div>
-
                     ))}
 
                     <button
@@ -817,27 +684,18 @@ function App() {
                     >
                       Enquire on WhatsApp
                     </button>
-
                   </div>
-
                 </div>
 
                 <div className="vehicle-info">
-
                   <h3>{vehicle.name}</h3>
 
                   <strong>{vehicle.price}</strong>
-
                 </div>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
 
         {/* <button
           className="view-all"
@@ -845,185 +703,110 @@ function App() {
         >
           Book a Test Ride
         </button> */}
-
       </section>
-
 
       {/* =====================================================
           SOLAR / FACILITIES
       ===================================================== */}
 
-      <section
-        className="facilities"
-        id="facilities"
-      >
-
+      <section className="facilities" id="facilities">
         <div className="section">
-
           <div className="section-heading dark-heading">
-
             <span>MORE THAN JUST EVs</span>
 
-            <h2>
-              Power your vehicle with the sun.
-            </h2>
+            <h2>Power your vehicle with the sun.</h2>
 
             <p style={{ color: "#aaa" }}>
-              We also design and install rooftop solar systems
-              for homes and businesses.
+              We also design and install rooftop solar systems for homes and
+              businesses.
             </p>
-
           </div>
 
           <div className="facility-grid">
-
             {facilities.map((facility) => (
-
-              <div
-                className="facility-card"
-                key={facility.title}
-              >
-
-                <div className="facility-icon">
-                  {facility.icon}
-                </div>
+              <div className="facility-card" key={facility.title}>
+                <div className="facility-icon">{facility.icon}</div>
 
                 <h3>{facility.title}</h3>
 
                 <p>{facility.text}</p>
-
               </div>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
-
-      
-
 
       {/* =====================================================
           GALLERY
       ===================================================== */}
 
-      <section
-        className="section"
-        id="gallery"
-      >
-
+      <section className="section" id="gallery">
         <div className="section-heading">
-
           <span>INSIDE THE SHOWROOM</span>
 
           <h2>See the range before you ride it.</h2>
 
           <p>
-            Visit our Indore showroom for test rides and
-            personal assistance.
+            Visit our Indore showroom for test rides and personal assistance.
           </p>
-
         </div>
 
         <div className="gallery-grid">
-
           {gallery.map((item) => (
-
-            <div
-              className="gallery-card"
-              key={item.title}
-            >
-
-              <img
-                src={item.image}
-                alt={item.title}
-              />
+            <div className="gallery-card" key={item.title}>
+              <img src={item.image} alt={item.title} />
 
               <div className="gallery-overlay">
-
                 <strong>{item.title}</strong>
-
               </div>
-
             </div>
-
           ))}
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           WHY US
       ===================================================== */}
 
-      <section
-        className="why-us"
-        id="why"
-      >
-
+      <section className="why-us" id="why">
         <div className="why-content">
-
           <span>WHY VOLTAGE</span>
 
-          <h2>
-            Why buy your EV from us?
-          </h2>
+          <h2>Why buy your EV from us?</h2>
 
           <p>
-            We combine an authorised Mercury EV-Tech
-            dealership with local sales, service and solar
-            solutions for a complete electric mobility
+            We combine an authorised Mercury EV-Tech dealership with local
+            sales, service and solar solutions for a complete electric mobility
             experience.
           </p>
-
         </div>
 
         <div className="why-items">
-
           {reasons.map((reason) => (
-
             <div key={reason.title}>
-
               <span>{reason.icon}</span>
 
               <h3>{reason.title}</h3>
 
               <p>{reason.text}</p>
-
             </div>
-
           ))}
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           BLOG
       ===================================================== */}
 
-      <section
-        className="section"
-        id="blog"
-      >
-
+      <section className="section" id="blog">
         <div className="section-heading">
-
           <span>FROM VOLTAGE</span>
 
           <h2>EV notes for Indore riders.</h2>
-
         </div>
 
         <div className="gallery-grid">
-
           {blogs.map((blog, index) => (
-
             <article
               className="gallery-card"
               key={blog.title}
@@ -1033,7 +816,6 @@ function App() {
                 padding: "25px",
               }}
             >
-
               <div
                 style={{
                   position: "relative",
@@ -1041,7 +823,6 @@ function App() {
                   color: "#111",
                 }}
               >
-
                 <span
                   style={{
                     color: "#45b72f",
@@ -1051,9 +832,7 @@ function App() {
                   0{index + 1}
                 </span>
 
-                <h3 style={{ marginTop: "20px" }}>
-                  {blog.title}
-                </h3>
+                <h3 style={{ marginTop: "20px" }}>{blog.title}</h3>
 
                 <p
                   style={{
@@ -1065,45 +844,30 @@ function App() {
                 >
                   {blog.text}
                 </p>
-
               </div>
-
             </article>
-
           ))}
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           COMPANY / PARTNERS
       ===================================================== */}
 
       <section className="section">
-
         <div className="section-heading">
+          <span>VOLTAGE ENERGY VENTURES LLP</span>
 
-          <span>
-            VOLTAGE ENERGY VENTURES LLP
-          </span>
-
-          <h2>
-            Built for the electric future.
-          </h2>
+          <h2>Built for the electric future.</h2>
 
           <p>
-            Registered with the Ministry of Corporate Affairs,
-            ROC Gwalior — incorporated 12 August 2026.
+            Registered with the Ministry of Corporate Affairs, ROC Gwalior —
+            incorporated 12 August 2026.
           </p>
-
         </div>
 
         <div className="vehicle-grid">
-
           {partners.map((partner, index) => (
-
             <div
               className="vehicle-card"
               key={partner}
@@ -1112,7 +876,6 @@ function App() {
                 textAlign: "center",
               }}
             >
-
               <div
                 style={{
                   color: "#45b72f",
@@ -1123,9 +886,7 @@ function App() {
                 0{index + 1}
               </div>
 
-              <h3 style={{ marginTop: "15px" }}>
-                {partner}
-              </h3>
+              <h3 style={{ marginTop: "15px" }}>{partner}</h3>
 
               <p
                 style={{
@@ -1136,54 +897,36 @@ function App() {
               >
                 Designated Partner
               </p>
-
             </div>
-
           ))}
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           CONTACT
       ===================================================== */}
 
-      <section
-        className="section contact"
-        id="contact"
-      >
-
+      <section className="section contact" id="contact">
         <div className="contact-info">
-
           <span>CONTACT VOLTAGE</span>
 
-          <h2>
-            Come see the range in person.
-          </h2>
+          <h2>Come see the range in person.</h2>
 
           <p>
-            Test rides are available at our Indore showroom.
-            Book your slot through call or WhatsApp.
+            Test rides are available at our Indore showroom. Book your slot
+            through call or WhatsApp.
           </p>
 
           <div className="contact-details">
-
             <div>
-
               <span>📍</span>
 
               <div>
-
-                <strong>
-                  REGISTERED ADDRESS
-                </strong>
+                <strong>REGISTERED ADDRESS</strong>
 
                 <p>
-                  G-2, 57B, Pulak City, Silicon City,
-                  Rau, Rajendra Nagar, Indore,
-                  Madhya Pradesh 452012
+                  G-2, 57B, Pulak City, Silicon City, Rau, Rajendra Nagar,
+                  Indore, Madhya Pradesh 452012
                 </p>
 
                 <p>
@@ -1199,42 +942,26 @@ function App() {
                     Get Directions →
                   </a>
                 </p>
-
               </div>
-
             </div>
 
-
             <div>
-
               <span>📞</span>
 
               <div>
-
-                <strong>
-                  PHONE / WHATSAPP
-                </strong>
+                <strong>PHONE / WHATSAPP</strong>
 
                 <p>
-                  <a href={`tel:+${phone}`}>
-                    74705 98407
-                  </a>
+                  <a href={`tel:+${phone}`}>74705 98407</a>
                 </p>
-
               </div>
-
             </div>
 
-
             <div>
-
               <span>💬</span>
 
               <div>
-
-                <strong>
-                  WHATSAPP ALTERNATE
-                </strong>
+                <strong>WHATSAPP ALTERNATE</strong>
 
                 <p>
                   <a
@@ -1245,78 +972,46 @@ function App() {
                     98264 77320
                   </a>
                 </p>
-
               </div>
-
             </div>
 
-
             <div>
-
               <span>🕐</span>
 
               <div>
+                <strong>SHOWROOM HOURS</strong>
 
-                <strong>
-                  SHOWROOM HOURS
-                </strong>
-
-                <p>
-                  10:00 AM – 8:30 PM, all days
-                </p>
-
+                <p>10:00 AM – 8:30 PM, all days</p>
               </div>
-
             </div>
 
-
             <div>
-
               <span>✉️</span>
 
               <div>
-
-                <strong>
-                  EMAIL
-                </strong>
+                <strong>EMAIL</strong>
 
                 <p>
                   <a href="mailto:voltage.eventures@gmail.com">
                     voltage.eventures@gmail.com
                   </a>
                 </p>
-
               </div>
-
             </div>
 
-
             <div>
-
               <span>▣</span>
 
               <div>
+                <strong>BUSINESS DETAILS</strong>
 
-                <strong>
-                  BUSINESS DETAILS
-                </strong>
+                <p>GST: 23ABCFV7199J1ZM</p>
 
-                <p>
-                  GST: 23ABCFV7199J1ZM
-                </p>
-
-                <p>
-                  LLPIN: ADB-1259
-                </p>
-
+                <p>LLPIN: ADB-1259</p>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
 
         {/* TEST RIDE FORM */}
 
@@ -1444,122 +1139,69 @@ function App() {
           </form>
 
         </div> */}
-
       </section>
-
 
       {/* =====================================================
           FOOTER
       ===================================================== */}
 
       <footer>
-
         <div className="footer-top">
-
           <div>
-
             <div className="logo">
-
-              <div className="logo-circle">
-                ⚡
-              </div>
+              <div className="logo-circle">⚡</div>
 
               <div>
-
                 <h2>VOLTAGE</h2>
 
-                <span>
-                  ENERGY VENTURES
-                </span>
-
+                <span>ENERGY VENTURES</span>
               </div>
-
             </div>
 
             <p>
-              Voltage Energy Ventures LLP is an authorised
-              Mercury EV-Tech dealer in Indore, offering
-              electric scooters, loading vehicles,
+              Voltage Energy Ventures LLP is an authorised Mercury EV-Tech
+              dealer in Indore, offering electric scooters, loading vehicles,
               passenger vehicles and solar solutions.
             </p>
 
             <div className="socials">
-
               <span>f</span>
               <span>in</span>
               <span>◎</span>
-
             </div>
-
           </div>
-
 
           <div>
+            <h3>Quick Links</h3>
 
-            <h3>
-              Quick Links
-            </h3>
+            <button onClick={() => scrollTo("home")}>Home</button>
 
-            <button onClick={() => scrollTo("home")}>
-              Home
-            </button>
+            <button onClick={() => scrollTo("about")}>About</button>
 
-            <button onClick={() => scrollTo("about")}>
-              About
-            </button>
+            <button onClick={() => scrollTo("vehicles")}>Vehicles</button>
 
-            <button onClick={() => scrollTo("vehicles")}>
-              Vehicles
-            </button>
+            <button onClick={() => scrollTo("gallery")}>Gallery</button>
 
-            <button onClick={() => scrollTo("gallery")}>
-              Gallery
-            </button>
-
-            <button onClick={() => scrollTo("contact")}>
-              Contact
-            </button>
-
+            <button onClick={() => scrollTo("contact")}>Contact</button>
           </div>
-
 
           <div>
+            <h3>Contact</h3>
 
-            <h3>
-              Contact
-            </h3>
+            <p>74705 98407</p>
 
-            <p>
-              74705 98407
-            </p>
+            <p>voltage.eventures@gmail.com</p>
 
-            <p>
-              voltage.eventures@gmail.com
-            </p>
-
-            <p>
-              Indore, Madhya Pradesh
-            </p>
-
+            <p>Indore, Madhya Pradesh</p>
           </div>
-
         </div>
-
 
         <div className="footer-bottom">
+          <span>© 2026 Voltage Energy Ventures LLP</span>
 
-          <span>
-            © 2026 Voltage Energy Ventures LLP
-          </span>
-
-          <span>
-            Authorised Mercury EV-Tech Dealer
-          </span>
-
+          <span>Authorised Mercury EV-Tech Dealer</span>
         </div>
-
       </footer>
-
 
       {/* =====================================================
           FLOATING WHATSAPP
@@ -1574,7 +1216,6 @@ function App() {
       >
         ☎
       </a>
-
 
       {/* =====================================================
           SCROLL TOP
@@ -1592,7 +1233,6 @@ function App() {
       >
         ↑
       </button>
-
     </div>
   );
 }
